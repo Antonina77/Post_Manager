@@ -4,6 +4,16 @@ public class RepostsInfo {
     private int count;//количество репостов
     private boolean canRepost; //возможность  репостнуть запись
 
+    private int realizedRepost; //сделал ли репост текущий пользователь (1 - да, 0 - нет)
+
+    public int getRealizedRepost() {
+        return realizedRepost;
+    }
+
+    public void setRealizedRepost(int realizedRepost) {
+        this.realizedRepost = realizedRepost;
+    }
+
     public int getCount() {
         return count;
     }

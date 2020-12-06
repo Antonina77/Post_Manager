@@ -12,6 +12,63 @@ public class Post {
     private String attachmentsPost; //вложения
     private boolean addFavorite; // добавить в избранное
 
+    private String device; //устройство, с которого сделан пост
+    private String postType; //тип поста
+    private double friendsOnly; //запись могут видеть только друзья
+    private boolean fixPost; //запись закреплена
+    private boolean noNotificationsPost; //не отправлять уведомления по активности на данном посте
+    private boolean markedAsAds; //информация о том, содержит ли запись отметку "реклама"
+
+
+    public String getDevice() {
+        return device;
+    }
+
+    public void setDevice(String device) {
+        this.device = device;
+    }
+
+    public String getPostType() {
+        return postType;
+    }
+
+    public void setPostType(String postType) {
+        this.postType = postType;
+    }
+
+    public double getFriendsOnly() {
+        return friendsOnly;
+    }
+
+    public void setFriendsOnly(double friendsOnly) {
+        this.friendsOnly = friendsOnly;
+    }
+
+    public boolean isFixPost() {
+        return fixPost;
+    }
+
+    public void setFixPost(boolean fixPost) {
+        this.fixPost = fixPost;
+    }
+
+    public boolean isNoNotificationsPost() {
+        return noNotificationsPost;
+    }
+
+    public void setNoNotificationsPost(boolean noNotificationsPost) {
+        this.noNotificationsPost = noNotificationsPost;
+    }
+
+    public boolean isMarkedAsAds() {
+        return markedAsAds;
+    }
+
+    public void setMarkedAsAds(boolean markedAsAds) {
+        this.markedAsAds = markedAsAds;
+    }
+
+
     public int getId() {
 
         return id;

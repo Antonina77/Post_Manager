@@ -7,6 +7,34 @@ public class CommentsInfo {
     private boolean canComment; //может ли пользователь откомментировать запись
     private boolean likeComment; //может ли пользователь лайкнуть комментарий
 
+    private boolean canOpenComments; //может ли пользователь открыть все комментарии
+    private boolean canCloseComments; //может ли пользователь закрыть комментарии к записи
+    private boolean canGroupsComment; //могут ли сообщества комментировать запись
+
+    public boolean isCanOpenComments() {
+        return canOpenComments;
+    }
+
+    public void setCanOpenComments(boolean canOpenComments) {
+        this.canOpenComments = canOpenComments;
+    }
+
+    public boolean isCanCloseComments() {
+        return canCloseComments;
+    }
+
+    public void setCanCloseComments(boolean canCloseComments) {
+        this.canCloseComments = canCloseComments;
+    }
+
+    public boolean isCanGroupsComment() {
+        return canGroupsComment;
+    }
+
+    public void setCanGroupsComment(boolean canGroupsComment) {
+        this.canGroupsComment = canGroupsComment;
+    }
+
     public int getCount() {
         return count;
     }
